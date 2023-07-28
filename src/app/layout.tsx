@@ -1,6 +1,8 @@
+import { Button } from 'antd'
 import './globals.css'
 import type { Metadata } from 'next'
 import { Inter } from 'next/font/google'
+import Link from 'next/link'
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -14,9 +16,35 @@ export default function RootLayout({
 }: {
   children: React.ReactNode
 }) {
+  const linkClasses = " h-12 w-36 text-black font-inter text-center p-3 hover:bg-slate-50"
+
   return (
     <html lang="en">
-      <body className={inter.className}>{children}</body>
-    </html>
+      <body className={inter.className}>
+        <header className='min-h-[60px] p-10 w-full'>
+          <nav className='flex gap-4 w-full justify-end items-center'>
+            {/* <Button type='text' > */}
+            <Link href="./" className={linkClasses}>
+              Home
+            </Link>
+
+            <Link href="./experience" className={linkClasses}>
+              About
+            </Link>
+
+
+            <Link href="./publications" className={linkClasses}>
+              Work
+            </Link>
+
+
+            <Link href="./contact" className={`${linkClasses} bg-blue-500 text-white rounded-lg font-bold text-center p-3 hover:bg-blue-700`}>
+              Contact Me
+            </Link>
+          </nav>
+        </header>
+        {children}
+      </body >
+    </html >
   )
 }
