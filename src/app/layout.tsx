@@ -16,7 +16,7 @@ export default function RootLayout({
 }: {
   children: React.ReactNode
 }) {
-  const linkClasses = " h-12 w-36 text-black font-inter text-center p-3 hover:bg-slate-50"
+  const linkClasses = " h-12 w-36 text-black font-inter text-center p-3 "
 
   return (
     <html lang="en">
