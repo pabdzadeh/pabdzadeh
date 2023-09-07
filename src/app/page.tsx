@@ -215,7 +215,16 @@ export default function Home() {
             </Link>
           </div>
           <div className='text-[#ccf381] flex flex-col text-xl cursor-pointer'>
-            https://www.instagram.com/pedram.abdzadeh/
+            <Link href={'https://instagram.com/pedram.abdzadeh/'} target='_blank'>
+              instagram.com/pedram.abdzadeh/
+            </Link>
+          </div>
+
+          <div className='text-[#ccf381] flex flex-col text-xl cursor-pointer'>
+            <Link href={'https://github.com/pabdzadeh/'} target='_blank'>
+              github.com/pabdzadeh/
+            </Link>
+
           </div>
           <div className='border-t-2 border-[#ccf381] h-5 w-[70%] absolute bottom-[150px]'>
           </div>
