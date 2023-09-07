@@ -1,5 +1,7 @@
 import { Kristi } from 'next/font/google'
 import Image from 'next/image';
+import { Tooltip } from 'antd';
+import Link from 'next/link';
 import profile from '../../public/IMG_20230218_222932_447.jpg';
 import DigiKalaLogo from '../../public/footerlogo2.webp';
 import DFreightLogo from '../../public/android-chrome-384x384.png';
@@ -9,18 +11,11 @@ import DFrieghtWorkSample from '../../public/Screenshot from 2023-09-07 14-21-38
 import DigikalaWorkSample from '../../public/Screenshot from 2023-09-07 14-23-23.png';
 import WizeWorkSample from '../../public/Screenshot from 2023-09-07 14-50-44.png';
 import FanAvaWorkSample from '../../public/Screenshot from 2023-09-07 15-17-25.png';
-import { useRouter } from "next/navigation";
-
-
 import { Figure } from '@/components';
-import { Button, Tooltip } from 'antd';
-import Link from 'next/link';
 
 const kristi = Kristi({ weight: '400', subsets: ['latin'] });
 
 export default function Home() {
-  // const router = useRouter();
-
   return (
     <>
       <main className="flex lg:flex-row flex-col  h-auto lg:h-[90vh] items-center w-full">
