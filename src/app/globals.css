@@ -19,3 +19,21 @@
 body {
   background: var(--white, #F7F3F3);
 }
+
+.scrollbar::-webkit-scrollbar {
+  width: 6px;
+}
+
+.scrollbar::-webkit-scrollbar-track {
+  border-radius: 8px;
+  width: 12px;
+  background-color: #e7e7e7;
+  border: 1px solid #cacaca;
+}
+
+.scrollbar::-webkit-scrollbar-thumb {
+  border-radius: 8px;
+  border: 1px solid transparent;
+  background-clip: content-box;
+  background-color: #4831d4;
+}

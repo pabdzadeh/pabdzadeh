@@ -20,29 +20,7 @@ export default function RootLayout({
 
   return (
     <html lang="en">
-      <body className={inter.className}>
-        <header className='min-h-[60px] p-10 w-full'>
-          <nav className='flex gap-4 w-full justify-end items-center'>
-            {/* <Button type='text' > */}
-            <Link href="./" className={linkClasses}>
-              Home
-            </Link>
-
-            <Link href="./experience" className={linkClasses}>
-              About
-            </Link>
-
-
-            <Link href="./publications" className={linkClasses}>
-              Work
-            </Link>
-
-
-            <Link href="./contact" className={`${linkClasses} bg-blue-500 text-white rounded-lg font-bold text-center p-3 hover:bg-blue-700`}>
-              Contact Me
-            </Link>
-          </nav>
-        </header>
+      <body className={inter.className + ' scrollbar'}>
         {children}
       </body >
     </html >
